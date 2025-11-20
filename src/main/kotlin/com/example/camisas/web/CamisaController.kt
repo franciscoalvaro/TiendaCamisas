@@ -10,6 +10,7 @@ import java.net.URI
 
 @RestController
 @RequestMapping("/api/camisas")
+@CrossOrigin(origins = ["http://localhost:8100"])
 class CamisaController(
     private val service: CamisaService
 ) {

@@ -9,6 +9,7 @@ import java.net.URI
 
 @RestController
 @RequestMapping("/api/tipos")
+@CrossOrigin(origins = ["http://localhost:8100"])
 class TipoCamisaController(
     private val service: TipoCamisaService
 ) {
